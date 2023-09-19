@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Rubik:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    clear: both;
+
+}
+
+/* color variable */
+
+:root {
+    --h-color: #22A699;
+    /* --color:; */
+    --header-bg-color: #27374D;
+    --bg-color: #082055;
+    --bg-hover: #19376D;
+
+    --h1-font: 'Kanit', sans-serif;
+    --p-font: 'Rubik', sans-serif;
+}
+
+/* color variable */
+
+
+body {
+    background: green;
+    /* background: #242424; */
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* header */
+.header {
+    background: var(--header-bg-color);
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+.head {
+    display: flex;
+    width: calc(100% - 50px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    max-height: 50px;
+    min-height: 40px;
+
+}
+
+.head img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.log-reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+}
+
+
+
+/* close */
+
+.close {
+    position: absolute;
+    color: white;
+    font-size: 2.4rem;
+    top: 5%;
+    right: 5%;
+}
+
+/* close */
+
+
+
+
+
+/* head button */
+
+.log-reg button.btn {
+    font-weight: 600;
+    font-family: var(--h1-font);
+}
+
+/* head button */
+
+
+
+.log-reg :where(.log, .reg) {
+    padding: 5px 20px;
+    white-space: nowrap;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: none;
+    color: white;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.log-reg :where(.log, .reg):hover {
+    background: var(--bg-hover);
+}
+
+
+/* header */
+
+
+
+/* log section */
+
+.log-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #0000006c;
+    color: white;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+}
+
+/* log section */
+
+
+
+/* log registration form */
+
+.log-form,
+.reg-form {
+    background: var(--header-bg-color);
+    padding: 5%;
+    width: 16rem;
+    height: fit-content;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform-origin: top center;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+
+/* log registration form */
+
+
+/* form */
+
+:where(.log-form, .reg-form) form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+}
+
+/* form */
+
+
+
+/* input */
+
+input {
+    margin-bottom: 3%;
+    height: 2.2rem;
+    padding-inline: 5%;
+    width: 15rem;
+    flex-grow: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    outline-color: #22A699;
+}
+
+/* input */
+
+/* input label */
+
+form label {
+    font-weight: bold;
+    font-family: var(--h1-font);
+    /* margin-left: 3%; */
+    margin-bottom: 1%;
+    align-self: start;
+}
+
+/* input label */
+
+
+
+/* input btn */
+input[type=submit] {
+    color: white;
+    margin-top: 5%;
+    width: 16rem;
+    height: 2.2rem;
+    font-size: medium;
+    background: var(--bg-hover);
+    font-weight: bold;
+    font-family: var(--p-font);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+input[type=submit]:hover {
+    background: var(--h-color);
+}
+
+/* input btn */
+
+
+
+/* log h1 */
+.log-form h1 {
+    color: var(--h-color);
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--h1-font);
+    letter-spacing: 3px;
+
+}
+
+/* log h1 */

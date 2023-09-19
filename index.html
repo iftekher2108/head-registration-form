@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Registration</title>
+    <link rel="stylesheet" href="asset/custom/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <div class="head">
+            <img src="asset/image/logo.png" alt="logo">
+
+            <div class="log-reg">
+                <button class="btn log">Log In</button>
+                <button class="btn reg">Registration</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- header -->
+
+
+
+    <!-- log section -->
+    <div class="log-section">
+
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+
+        <!-- log in form -->
+        <div class="log-form">
+            <h1>Log in</h1>
+            <form action="" method="" enctype="multipart/form-data">
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Enter your E-mail" required>
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password " required>
+
+                <input type="submit" value="Log in">
+
+            </form>
+        </div>
+        <!-- log in form -->
+
+
+        <!-- reg in form -->
+        <div class="reg-form">
+            <h1>Registration</h1>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder=" Name" required>
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder=" E-mail" required>
+                <label for="Phone">Phone :</label>
+                <input type="text" id="Phone" name="Phone" placeholder=" Phone" pattern="0-9" required>
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="Password " required>
+
+                <label for="re-password">Re-type Password :</label>
+                <input type="password" id="" name="re-password" placeholder="Re-type Password " required>
+
+                <input type="submit" value="Log in">
+
+            </form>
+        </div>
+        <!-- reg in form -->
+
+
+    </div>
+
+    <!-- log section -->
+
+
+
+    <script src="asset/custom/js/main.js"></script>
+</body>
+
+</html>
