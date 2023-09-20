@@ -18,6 +18,7 @@ let reg_btn = document.querySelector('.btn.reg'),
 // log in 
 log_btn.onclick = () => {
     log_body.style.transform = "scaleY(1)";
+    log_body.style.opacity = "1"
     log_section.style.display = "block";
     log_section.style.transform = "scaleY(1)";
     reg_section.style.transform = "scaleY(0)";
@@ -28,6 +29,7 @@ log_btn.onclick = () => {
 // registration
 reg_btn.onclick = () => {
     log_body.style.transform = "scaleY(1)";
+    log_body.style.opacity = "1"
     reg_section.style.display = "block";
     reg_section.style.transform = "scaleY(1)";
     log_section.style.transform = "scaleY(0)";
@@ -37,5 +39,6 @@ reg_btn.onclick = () => {
 
 // close
 close.onclick = () => {
+    log_body.style.opacity = "0";
     log_body.style.transform = "scaleY(0)";
 }
